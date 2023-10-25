@@ -10,7 +10,7 @@ let dirY=1;
 function bol(x,y){
     ctx.fillStyle=`hsl(${valHsl++},55%,55%)`;
     ctx.beginPath();
-    ctx.arc(x,y,50,0,Math.PI*2);
+    ctx.arc(x,y,45,0,Math.PI*2);
     ctx.fill();
     //ctx.stroke();
 }

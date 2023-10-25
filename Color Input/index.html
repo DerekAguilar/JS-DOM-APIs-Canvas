@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores con inputs</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: cornflowerblue;
+            color:white;
+            text-align: center;
+            box-shadow: 3px 3px 3px 3px #0002;
+        }
+
+        .container * {
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Colores con Inputs</h1>
+        <h2>Arrastra y aplica</h2>
+        Rojo: 
+        <input type="range" name="" id="red" value="0">
+        <br>
+        Verde: 
+        <input type="range" name="" id="green" value="0">
+        <br>
+        Azul: 
+        <input type="range" name="" id="blue" value="0">
+        <br>
+        Transparencia: 
+        <input type="range" name="" id="transp" value="0">
+    </div>
+    <script src="./coloresinput.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas con Javascript</title>
+    <style>
+        body {
+            background-color: #061b26;
+            color:aliceblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .container h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .container div{
+            width: 45%;
+            text-align: center;
+            background-color:#1c3671;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px #00000030;
+        }
+
+        textarea {
+            width: 90%;
+            margin: 0 auto;
+            background-color: cadetblue;
+            color:antiquewhite;
+            font-size: large;
+            border-radius: 10px;
+            border:solid;
+            border-style:inset;
+            border-color: darkcyan;
+            border-width: 3px;
+        }
+
+        ul {
+            font-size: 25px;
+        }
+        button {
+            width: 50%;
+            background-color: darkcyan;
+            color:white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+            border: none;
+            margin: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px #00000030;
+        }
+        button:hover {
+            background-color: #08707C;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas en Javascript</h1>
+        <div id="formulario">
+            <h2>Ingresa la Tarea:</h2>
+            <textarea name="" id="inputTarea" cols="30" rows="10"></textarea><br>
+            <h3>Hora</h3>
+            <input type="time" name="" id="tiempo">
+            <button onclick="addTarea()">Agregar Tarea</button>
+        </div>
+        <div id="tareas">
+            <h2>Mis Tareas</h2>
+            <ul></ul>
+        </div>        
+    </div>
+    <script src="./tareas.js"></script>
+</body>
+</html>

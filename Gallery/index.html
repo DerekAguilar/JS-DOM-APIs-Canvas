@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #101010;
+            display: flex;
+            place-items:center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        img {
+            border-radius: 5%;
+        }
+
+        .container {
+            text-align: center;
+        }
+        .img-thumbnail {
+            width: 200px;
+        }
+        .img-thumbnail:hover {
+            width: 250px;
+            box-shadow: 3px 3px 3px 3px #ffffff20;
+        }
+        img#main {
+            width:100%;
+        }
+    </style>
+    <title>Galería</title>
+</head>
+<body>
+    <div class="container" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img class="img-thumbnail" src="./angy.jpg" alt="Ai-nojada">
+        <img class="img-thumbnail" src="./0.jpg" alt=":0">
+        <img class="img-thumbnail" src="./ber.jpg" alt="osito">
+        <img class="img-thumbnail" src="./meow.png" alt="chamaco">
+        <img class="img-thumbnail" src="./IA.png" alt="IA">
+        <img class="img-thumbnail" src="./WP.png" alt="WP">
+        <img class="img-thumbnail" src="./noc.png" alt="noc">
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-white">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Imagen</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="main" src="" alt="ná'">
+                </div>
+            </div>
+        </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./galeria.js"></script>
+</body>
+</html>
